@@ -1,0 +1,262 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font-size: 100%; */
+  /* font: inherit; */
+  /* vertical-align: baseline; */
+  text-align: center;
+  font-family: "Arial";
+  /* border: 1px solid red; */
+}
+
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+.hero {
+  background: url(./images/torshov.jpg);
+  /* width: 720px; */
+  height: 343px;
+  background-size: cover;
+  /* margin-top: -22px; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* color: #f1faee; */
+}
+
+#heroText1 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  color: #ffffff;
+  background: #1d3557;
+  padding: 3px 12px;
+  border-radius: 10px;
+}
+#heroText2 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.72px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  background: #457b9d;
+  padding: 8px 29px;
+  border-radius: 10px;
+  margin-top: 21px;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  height: 378px;
+  background: #f1faee;
+  padding: 0 20px;
+}
+
+.activities-heading {
+  margin: 39px 41px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #1d3557;
+}
+.activities img {
+  width: 100px;
+  height: 99.34px;
+  border-radius: 50%;
+}
+
+.activities-content {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.content h4 {
+  margin-top: 22.6px;
+  margin-bottom: 17px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #1d3557;
+}
+
+.content p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #1d3557;
+}
+
+.guide {
+  height: 394px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.guide-content {
+  display: flex;
+  /* flex-direction: column; */
+  width: 400px;
+  height: 294px;
+  background: #a8dadc;
+  box-shadow: 0px 6px 0px #1d3557;
+  border-radius: 10px;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 13px;
+  margin-top: 50px;
+}
+
+.guide-content-1 {
+  margin: 0;
+}
+.guide-content-1 img {
+  width: 180px;
+  height: 248.67px;
+  border-radius: 10px;
+}
+
+.guide-content-2 h3 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #1d3557;
+}
+.guide-content-2 P {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #1d3557;
+}
+.guide-content-2 h4 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #1d3557;
+}
