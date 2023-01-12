@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+
+  background: #1f2937;
+
+  color: #fff;
+
+  /* border: 1px dotted #fff; */
+}
+.wrapper {
+  width: 550px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 550px;
+  height: 550px;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 5px black;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+.main-content h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  /* or 100% */
+
+  letter-spacing: -0.025em;
+}
+#main-content-h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  color: #4adf86;
+  letter-spacing: -0.025em;
+}
+
+.main-content p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+
+  /* Medium grey */
+
+  color: #d5d4d8;
+
+  margin-bottom: 50px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 191px;
+  height: 42px;
+
+  background: #10b981;
+  /* shadow/sm */
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  margin-bottom: 50px;
+
+  border: none;
+}
+
+.btn:hover {
+  color: #10b981;
+  background: #fff;
+}
+
+hr {
+  position: absolute;
+  width: 446px;
+  height: 0px;
+  border: 1px solid #2f3e53;
+}
+
+.generatedPasswords {
+  display: flex;
+  /* justify-content: space-; */
+}
+
+.btn-2 {
+  width: 211px;
+  height: 39px;
+  background: #273549;
+  border-radius: 6px;
+  margin-right: 30px;
+  margin-top: -180px;
+  color: #55f991;
+  border: none;
+}

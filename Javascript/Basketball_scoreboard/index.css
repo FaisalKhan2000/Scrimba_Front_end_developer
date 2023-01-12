@@ -1,0 +1,152 @@
+@import url("https://cdn.jsdelivr.net/gh/mustafazeydani/Fonts/CursedTimerULiL/CursedTimerULiL.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: "Cursed Timer ULiL"; */
+  background: #1d244a;
+  color: #fff;
+  /* border: 1px dotted red; */
+}
+
+body {
+  margin: 0;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "Cursed Timer ULiL";
+  background: #1d244a;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+  width: 693px;
+  margin: 0 auto;
+}
+
+.container-1 h3,
+.container-2 h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 35.89px;
+}
+
+.container-1,
+.container-2 {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 155px;
+}
+
+.score {
+  font-family: "Cursed Timer ULiL";
+  width: 155px;
+  height: 120px;
+  background: #080001;
+  border-radius: 5px;
+  color: #f94f6d;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 127px;
+}
+
+.btns-1,
+.btns-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.btn-1,
+.btn-2,
+.btn-3,
+.btn-4,
+.btn-5,
+.btn-6 {
+  width: 45px;
+  height: 45px;
+  padding-top: 7px;
+
+  font-family: "Cursed Timer ULiL";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+
+  text-align: center;
+
+  color: #9aabd8;
+
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover,
+.btn-4:hover,
+.btn-5:hover,
+.btn-6:hover {
+  color: #1d244a;
+
+  border: 2px solid #1d244a;
+  background: #9aabd8;
+}
+
+/* Extra btns */
+.extrabtns {
+  display: flex;
+  justify-content: center;
+}
+
+.newgame {
+  color: #9aabd8;
+
+  border: 2px solid #9aabd8;
+
+  font-family: "Cursed Timer ULiL";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 10px;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newgame:hover {
+  color: #1d244a;
+
+  border: 2px solid #1d244a;
+  background: #9aabd8;
+}
+
+#highlight {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#highlight p {
+  width: 693px;
+  font-family: "Cursed Timer ULiL";
+  height: 120px;
+  background: #080001;
+  border-radius: 5px;
+  color: #f94f6d;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 127px;
+}
