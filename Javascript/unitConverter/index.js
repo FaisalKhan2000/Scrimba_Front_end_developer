@@ -5,7 +5,7 @@
 */
 
 let input = document.getElementById("search");
-const convertBtn = document.getElementById("convertBtn");
+const convertBTN = document.getElementById("convertBtn");
 
 let length = document.getElementById("length");
 let volume = document.getElementById("volume");
@@ -36,4 +36,4 @@ function convert() {
   mass.innerHTML = `<p>${inputValue} kilos = ${pound}  pounds | ${inputValue}  pounds = ${kg}  kilos </p>`;
 }
 
-convertBtn.addEventListener("click", convert);
+convertBTN.addEventListener("click", convert);
