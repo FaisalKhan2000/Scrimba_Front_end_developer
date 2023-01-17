@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 41px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    color: #6497b1;
+}
+
+.accent{
+    color: #03396c;
+    font-style: italic;
+}
+
+.container{
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.palette-section{
+    background-color: midnightblue;
+    min-height: 200px;
+    min-width: 80px; 
+}
+
+.blue-1{
+    background-color: #011f4b;    
+}
+.blue-2{
+    background-color: #03396c;    
+}
+.blue-3{
+    background-color: #005b96;    
+}
+.blue-4{
+    background-color: #6497b1;    
+}
+.blue-5{
+    background-color: #b3cde0;    
+}
+
+.btn-controls{
+    text-align: center;
+}
+
+button{
+    padding: 7px 17px;
+}
