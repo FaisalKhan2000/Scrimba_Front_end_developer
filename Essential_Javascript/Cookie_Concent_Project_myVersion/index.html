@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelo</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <video
+        id="background-video"
+        autoplay
+        loop
+        muted
+        poster="./images/bg-4.mp4"
+      >
+        <source src="./images/bg-4.mp4" type="video/mp4" />
+      </video>
+      <div class="wrapper">
+        <header>
+          <div class="logo">Travelo</div>
+          <nav class="navbar">
+            <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="#">gallery</a></li>
+              <li><a href="#">tour</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <div class="main-content">
+            <div class="main-heading">Explore Mauritius</div>
+            <div class="main-paragraph">
+              <p>
+                Welcome to Travelo, your one-stop-shop for planning the perfect
+                vacation to the beautiful island of Mauritius. Nestled in the
+                heart of the Indian Ocean, this tropical paradise offers a wide
+                range of activities and attractions that are sure to delight
+                travelers of all ages and interests.
+              </p>
+            </div>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </main>
+        <footer>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-regular fa-envelope"></i>
+          <!-- <i class="fa-solid fa-envelope"></i> -->
+        </footer>
+      </div>
+
+      <div id="modal">
+        <div class="modal-container" id="modal-container">
+          <div class="modal-heading">Terms and Conditions</div>
+          <p class="model-content" id="modal-text">
+            Our travel agency website "Travelo" is operated by ("we" or "us").
+            By using our Website, you agree to be bound by these terms and
+            conditions of use ("Terms"). If you do not agree to these Terms, you
+            should not use our Website. We reserve the right to make changes to
+            these Terms at any time. Your continued use of our Website following
+            any such changes constitutes your acceptance of the new Terms.
+          </p>
+          <form class="input" id="consent-form">
+            <input
+              type="text"
+              name="fullName"
+              placeholder="Enter your full name"
+              aria-label="Full name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              aria-label="Email address"
+              required
+            />
+            <div class="modal-choice-btns" id="modal-choice-btns">
+              <button type="submit" id="accept" class="modal-btn">
+                Accept
+              </button>
+              <button class="modal-btn" id="decline">Reject</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="close-modal-btn-container">
+          <button class="modal-close-btn" id="modal-close-btn" disabled>
+            X
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
