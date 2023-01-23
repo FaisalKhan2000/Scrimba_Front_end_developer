@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Smythe&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Lobster', cursive; */
+  font-family: "Smythe", cursive;
+}
+
+#background {
+  /* background: #f3f3f3; */
+  height: 100%;
+  width: 100%;
+}
+
+#wrapper {
+  width: 600px;
+  height: 914px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+}
+
+header {
+  /* position: absolute; */
+  width: 600px;
+  height: 150px;
+  background: url("./utilites/bg-image.jpeg") center center/cover no-repeat;
+  color: #ffffff;
+  /* text-align: center; */
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  padding: 46px 46px;
+}
+
+header h1 {
+  font-size: 39px;
+  line-height: 24px;
+  margin-bottom: 19px;
+}
+
+header p {
+  font-size: 22.4216px;
+  line-height: 14px;
+}
+
+main {
+  padding: 51px 46px;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 51px 0 51px 0;
+}
+.section1 {
+  display: flex;
+  gap: 31px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.icon {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 78.72px;
+  line-height: 98px;
+}
+
+.content h1 {
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 17px;
+  /* identical to box height, or 60% */
+
+  color: #000000;
+}
+
+.content p {
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #8b8b8b;
+}
+
+.content h3 {
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  color: #000000;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add,
+.delete {
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid #dedede;
+  border-radius: 50%;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 24px;
+  /* or 75% */
+
+  text-align: center;
+
+  color: #3c3c3c;
+  background: #ffffff;
+  cursor: grab;
+}
+
+/* Order section */
+.order-details {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 0;
+  display: none;
+}
+
+.order-heading {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 17px;
+  /* identical to box height, or 60% */
+
+  color: #000000;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.order-container-1 {
+  display: flex;
+  gap: 13px;
+}
+
+.order-container-1 h1 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 17px;
+  /* identical to box height, or 60% */
+
+  color: #000000;
+}
+
+.order-container-1 button {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  /* or 200% */
+
+  color: #bbbbbb;
+  background: none;
+  border: none;
+}
+
+.order-container-2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  text-align: right;
+
+  color: #000000;
+}
+
+.order-border {
+  border: 2px solid #393333;
+  margin-bottom: 14px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+}
+.container-3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 24px;
+  /* identical to box height, or 86% */
+
+  color: #0e0e0e;
+}
+
+.container-4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  text-align: right;
+
+  color: #0e0e0e;
+  margin-bottom: 53px;
+}
+
+.complete-order {
+  width: 508px;
+  height: 60px;
+
+  background: #16db99;
+  border: none;
+  /* shadow/sm */
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* white */
+
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* .order-nos {
+  font-size: 10px;
+} */
+
+/* payment Modal */
+.payment-container {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 524px;
+  height: 542.24px;
+  background: #ffffff;
+  border-radius: 3.88991px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .payment-container svg {
+  width: 100px;
+  background: #16db99;
+  align-self: center;
+} */
+
+.payment-container form {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 3.88991px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  /* justify-content: space-between; */
+}
+
+form h1 {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  /* or 130% */
+
+  color: #000000;
+}
+
+input {
+  width: 475.91px;
+  height: 71.3px;
+
+  border: 1.29664px solid #757575;
+  border-radius: 3.88991px;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  padding: 10px 20px;
+}
+
+.payment-btn {
+  width: 475.91px;
+  height: 71.3px;
+  left: 61.22px;
+  top: 733.09px;
+
+  background: #16db99;
+  border-radius: 3.88991px;
+
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+  /* or 156% */
+
+  /* white */
+
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.text {
+  width: 504px;
+  height: 120px;
+  background: #ecfdf5;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text h1 {
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 17px;
+  /* identical to box height, or 52% */
+
+  color: #065f46;
+}
+
+.three-quarter-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fb5b53;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.5s linear 0s infinite;
+}
