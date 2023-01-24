@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Ordering App</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="background">
+      <div id="wrapper">
+        <div class="container">
+          <header>
+            <h1>Jimmy’s Diner</h1>
+            <p>The best burgers and pizzas in town.</p>
+          </header>
+          <main>
+            <section class="section">
+              <div class="section1">
+                <p class="icon">🍕</p>
+                <div class="content">
+                  <h1>Pizza</h1>
+                  <p>pepperoni,mushrom,mozarella</p>
+                  <h3>$14</h3>
+                </div>
+              </div>
+              <div class="section2">
+                <button class="add" id="add-button" data-name="pizzaadd">
+                  +
+                </button>
+                <button class="delete" id="decrementPizza" data-name="pizzadel">
+                  -
+                </button>
+              </div>
+            </section>
+            <section class="section">
+              <div class="section1">
+                <p class="icon">🍔</p>
+                <div class="content">
+                  <h1>Hamburger</h1>
+                  <p>beef, cheese, lettuce</p>
+                  <h3>$12</h3>
+                </div>
+              </div>
+              <div class="section2">
+                <button class="add" id="add-button" data-name="burgeradd">
+                  +
+                </button>
+                <button
+                  class="delete"
+                  id="decrementBurger"
+                  data-name="burgerdel"
+                >
+                  -
+                </button>
+              </div>
+            </section>
+            <section class="section">
+              <div class="section1">
+                <p class="icon">🍺</p>
+                <div class="content">
+                  <h1>Beer</h1>
+                  <p>grain, hops, yeast, water</p>
+                  <h3>$12</h3>
+                </div>
+              </div>
+              <div class="section2">
+                <button class="add" id="add-button" data-name="beeradd">
+                  +
+                </button>
+                <button class="delete" id="decrementBeer" data-name="beerdel">
+                  -
+                </button>
+              </div>
+            </section>
+            <section class="order-details" id="order-successfull-container">
+              <div class="order-heading" id="order-details">Your order</div>
+              <!-- Order - 1 -->
+              <!-- <div class="order-container">
+                <div class="order-container-1">
+                  <h1>Pizza</h1>
+                  <button class="remove">remove</button>
+                </div>
+                <div class="order-container-2">$14</div>
+              </div> -->
+              <hr class="order-border" />
+              <div class="price-container">
+                <div class="container-3">Total Price:</div>
+                <div class="container-4" id="total-price">$14</div>
+              </div>
+
+              <button class="complete-order" id="complete-order">
+                Complete order
+              </button>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <div class="payment-container" id="payment-container">
+      <form id="form">
+        <h1>Enter card details</h1>
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <input
+          type="number"
+          name="cardNumber"
+          placeholder="Enter card number"
+          required
+        />
+        <input type="number" name="cardCvv" placeholder="Enter cvv" required />
+        <button class="payment-btn" id="pay" type="submit">Pay</button>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
