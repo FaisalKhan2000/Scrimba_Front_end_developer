@@ -1,0 +1,16 @@
+{
+  "name": "devfinder",
+  "version": "1.0.0",
+  "description": "devfinder is a web application that allows users to search for GitHub profiles by username. The application was built using HTML, CSS, Flexbox, JavaScript, and the GitHub API.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "faisal khan",
+  "license": "ISC"
+}

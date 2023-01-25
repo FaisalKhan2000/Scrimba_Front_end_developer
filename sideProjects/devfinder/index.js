@@ -81,15 +81,24 @@ searchBtn.addEventListener("click", function () {
       />`;
       profileName.textContent = data.name;
       githubProfileId.textContent = data.login;
-      profileCreationDate.textContent = data.created_at;
-      bio.textContent = data.bio;
+
+      const dateString = data.created_at;
+      const date = new Date(dateString);
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      const formattedDate = date.toLocaleDateString("en-US", options);
+      // console.log(`Joined ${formattedDate}`);
+
+      profileCreationDate.textContent = formattedDate;
+      bio.textContent = data.bio ? data.bio : "This profile has no bio";
       repos.textContent = data.public_repos;
       followers.textContent = data.followers;
       following.textContent = data.following;
-      loc.textContent = data.location;
-      blog.textContent = data.blog;
-      twitter.textContent = data.twitter_username;
-      org.textContent = data.company;
+      loc.textContent = data.location ? data.location : "value not found";
+      blog.textContent = data.blog ? data.blog : "value not found";
+      twitter.textContent = data.twitter_username
+        ? data.twitter_username
+        : "value not found";
+      org.textContent = data.company ? data.company : "value not found";
     })
     .catch((error) => {
       console.error(error);
