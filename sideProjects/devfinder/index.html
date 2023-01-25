@@ -8,26 +8,21 @@
     <link rel="stylesheet" href="./styles..css" />
   </head>
   <body>
-    <div class="background">
-      <div class="wrapper">
+    <div id="background" class="background-dark">
+      <div id="wrapper" class="wrapper-dark">
         <div class="container">
-          <header class="navbar">
-            <div class="logo">devfinder</div>
+          <header id="navbar" class="navbar">
+            <div id="logo" class="logo">devfinder</div>
             <div class="light-container">
-              <div class="logo-2">Light</div>
-              <img
-                class="light-btn"
-                src="./utilities/sun.svg"
-                alt="moon svg"
-                width="20px"
-              />
+              <div id="logo-2" class="logo-2">Light</div>
+              <div id="light-btn" class="light-btn"></div>
             </div>
           </header>
           <main>
-            <section class="search-bar">
+            <section id="search-bar" class="search-bar">
               <img
                 src="./utilities/search.svg"
-                alt=""
+                alt="search icon"
                 class="search-icon"
                 width="20px"
               />
@@ -40,7 +35,7 @@
               />
               <button class="search-btn">Search</button>
             </section>
-            <section class="main-content">
+            <section id="main-content" class="main-content">
               <div class="component-1">
                 <div class="profile-img" id="profile-img">
                   <img
@@ -54,63 +49,55 @@
               <div class="component-2">
                 <div class="component-2-1">
                   <div class="component-2-1-left">
-                    <h1 class="profile-name">The Octocat</h1>
+                    <h1 id="profile-name" class="profile-name">The Octocat</h1>
                     <p class="github-profile-id">@octocat</p>
                   </div>
                   <div class="component-2-1-right">
-                    <p class="profile-creation-date">Joined 25 Jan 2011</p>
+                    <p id="profile-creation-date" class="profile-creation-date">
+                      Joined 25 Jan 2011
+                    </p>
                   </div>
                 </div>
                 <div class="component-2-2">
-                  <p class="bio">This profile has no bio</p>
+                  <p id="bio" class="bio">This profile has no bio</p>
                 </div>
-                <div class="component-2-3">
+                <div id="component-2-3" class="component-2-3">
                   <div class="repos-section">
                     <p class="repos text">Repos</p>
-                    <h1 class="numbers">8</h1>
+                    <h1 class="number number-dark">8</h1>
                   </div>
                   <div class="followers-section">
                     <p class="followers text">Followers</p>
-                    <h1 class="numbers">8144</h1>
+                    <h1 class="number number-dark">8144</h1>
                   </div>
                   <div class="following-section">
                     <p class="following text">Following</p>
-                    <h1 class="numbers">9</h1>
+                    <h1 class="number number-dark">9</h1>
                   </div>
                 </div>
                 <div class="component-2-4">
                   <div class="section">
-                    <img
-                      src="./utilities/location.svg"
-                      alt="location"
-                      width="20px"
-                    />
+                    <div
+                      id="location-icon-image"
+                      class="location-icon-image"
+                    ></div>
                     <div class="location-name text-2">San Francisco</div>
                   </div>
                   <div class="section">
-                    <img
-                      src="./utilities/link.svg"
-                      alt="github-link"
-                      width="20px"
-                    />
+                    <div id="link-icon-image" class="link-icon-image"></div>
                     <div class="link text-2">https://github.blog</div>
                   </div>
                 </div>
                 <div class="component-2-5">
                   <div class="section">
-                    <img
-                      src="./utilities/twitter.svg"
-                      alt="twitter"
-                      width="20px"
-                    />
+                    <div
+                      id="twitter-icon-image"
+                      class="twitter-icon-image"
+                    ></div>
                     <div class="twitter-name text-2">Not available</div>
                   </div>
                   <div class="section">
-                    <img
-                      src="./utilities/organisation.svg"
-                      alt="github-id"
-                      width="20px"
-                    />
+                    <div id="org-icon-image" class="org-icon-image"></div>
                     <div class="github-id text-2">@github</div>
                   </div>
                 </div>

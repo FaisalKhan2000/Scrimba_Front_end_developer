@@ -9,7 +9,7 @@
   /* border: 1px dotted red; */
 }
 
-.background {
+.background-dark {
   background: #101623;
   width: 100vw;
   height: 100vh;
@@ -18,10 +18,18 @@
   align-items: center;
 }
 
-.wrapper {
+.background-light {
+  background: #f3f6ff;
+}
+
+.wrapper-dark {
   width: 730px;
   height: 590px;
   background: #101623;
+}
+
+.wrapper-light {
+  background: #f3f6ff;
 }
 
 .container {
@@ -42,6 +50,10 @@
   margin-bottom: 30px;
 }
 
+/* .navbar-light {
+  color: #4b6a9b;
+} */
+
 .light-container {
   display: flex;
   gap: 20px;
@@ -53,6 +65,10 @@
   color: #ffffff;
 }
 
+.logo-light {
+  color: #4b6a9b;
+}
+
 .logo-2 {
   font-weight: bold;
   font-size: 13px;
@@ -61,8 +77,23 @@
   letter-spacing: 2.5px;
 }
 
+.logo-2-light {
+  color: #4b6a9b;
+}
+
 .light-btn {
   cursor: pointer;
+  background-image: url("./utilities/sun.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.dark-btn {
+  background-image: url("./utilities/moon.svg");
 }
 
 /* Search bar */
@@ -80,7 +111,11 @@
   margin-bottom: 20px;
 }
 
-.search-bar input {
+.search-bar-light {
+  background: #fefefe;
+}
+
+.search-input {
   border: none;
   width: 80%;
   height: 72px;
@@ -89,17 +124,25 @@
   padding: 20px;
 }
 
-input::-webkit-search-cancel-button {
+.search-input-light {
+  background: #fefefe;
+  color: #4b6a9b;
+}
+
+.search-input::-webkit-search-cancel-button {
   appearance: none;
 }
 
-input:valid {
+.search-input:valid {
   border: none;
   outline: none;
 }
 
-input::placeholder {
+.search-input::placeholder {
   color: #ffffff;
+}
+.search-input-light::placeholder {
+  color: #4b6a9b;
 }
 
 .search-btn {
@@ -117,6 +160,7 @@ input::placeholder {
 .search-btn:hover {
   color: #0079ff;
   background: #ffffff;
+  border: 1px solid #0079ff;
 }
 
 /* Main content */
@@ -127,6 +171,10 @@ input::placeholder {
   gap: 40px;
   background: #1e2a47;
   border-radius: 15px;
+}
+
+.main-content-light {
+  background: #fefefe;
 }
 
 .component-1 {
@@ -165,6 +213,10 @@ input::placeholder {
   color: #ffffff;
 }
 
+.profile-name-light {
+  color: #2b3442;
+}
+
 .github-profile-id {
   font-weight: lighter;
   font-size: 16px;
@@ -178,6 +230,10 @@ input::placeholder {
   /* margin-top: 10px; */
 }
 
+.profile-creation-date-light {
+  color: #4b6a9b;
+}
+
 .bio {
   font-weight: lighter;
   font-size: 15px;
@@ -185,6 +241,10 @@ input::placeholder {
   color: #bbbec7;
   margin-top: 10px;
   /* margin-bottom: 30px; */
+}
+
+.bio-light {
+  color: #4b6a9b;
 }
 
 /* component-2-3 */
@@ -201,16 +261,26 @@ input::placeholder {
   /* margin-bottom: 30px; */
 }
 
+.component-2-3-light {
+  background: #f6f8ff;
+}
+
 .text {
   font-weight: lighter;
   font-size: 13px;
   color: #ffffff;
 }
+.text-light {
+  font-weight: lighter;
+  font-size: 13px;
+  color: #4b6a9b;
+}
 
-.number {
-  font-weight: bold;
-  font-size: 22px;
+.number-dark {
   color: #ffffff;
+}
+.number-light {
+  color: #2b3442;
 }
 
 /* component-2-4 */
@@ -232,4 +302,63 @@ input::placeholder {
   font-weight: lighter;
   font-size: 15px;
   color: #ffffff;
+}
+
+.text-2-light {
+  color: #4b6a9b;
+}
+
+.location-icon-image {
+  cursor: pointer;
+  background-image: url("./utilities/location.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+.link-icon-image {
+  cursor: pointer;
+  background-image: url("./utilities/link.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.twitter-icon-image {
+  cursor: pointer;
+  background-image: url("./utilities/twitter.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+.org-icon-image {
+  cursor: pointer;
+  background-image: url("./utilities/organisation.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.location-icon-image-light {
+  background-image: url("./utilities/location-dark.svg");
+}
+.link-icon-image-light {
+  background-image: url("./utilities/link-dark.svg");
+}
+.twitter-icon-image-light {
+  background-image: url("./utilities/twitter-dark.svg");
+}
+.org-icon-image-light {
+  background-image: url("./utilities/organisation-dark.svg");
 }
