@@ -46,3 +46,52 @@ darkModeBtn.addEventListener("click", function () {
     .getElementById("org-icon-image")
     .classList.toggle("org-icon-image-light");
 });
+
+// API Logic
+const searchInput = document.getElementById("search-input");
+const searchBtn = document.getElementById("search-btn");
+const profileImage = document.getElementById("profile-img");
+const profileName = document.getElementById("profile-name");
+const githubProfileId = document.getElementById("github-profile-id");
+const profileCreationDate = document.getElementById("profile-creation-date");
+const bio = document.getElementById("bio");
+const repos = document.getElementById("repos");
+const followers = document.getElementById("followers");
+const following = document.getElementById("following");
+const loc = document.getElementById("location");
+const blog = document.getElementById("blog");
+const twitter = document.getElementById("twitter");
+const org = document.getElementById("org");
+let searchValue;
+searchInput.addEventListener("input", (event) => {
+  searchValue = event.target.value;
+});
+
+searchBtn.addEventListener("click", function () {
+  fetch(`https://api.github.com/users/${searchValue}`)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      profileImage.innerHTML = `
+      <img
+          src="${data.avatar_url}"
+          width="117px"
+          height="117px"
+          alt="profile image"
+      />`;
+      profileName.textContent = data.name;
+      githubProfileId.textContent = data.login;
+      profileCreationDate.textContent = data.created_at;
+      bio.textContent = data.bio;
+      repos.textContent = data.public_repos;
+      followers.textContent = data.followers;
+      following.textContent = data.following;
+      loc.textContent = data.location;
+      blog.textContent = data.blog;
+      twitter.textContent = data.twitter_username;
+      org.textContent = data.company;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+});

@@ -33,7 +33,7 @@
                 class="search-input"
                 placeholder="Search Github username..."
               />
-              <button class="search-btn">Search</button>
+              <button id="search-btn" class="search-btn">Search</button>
             </section>
             <section id="main-content" class="main-content">
               <div class="component-1">
@@ -50,7 +50,9 @@
                 <div class="component-2-1">
                   <div class="component-2-1-left">
                     <h1 id="profile-name" class="profile-name">The Octocat</h1>
-                    <p class="github-profile-id">@octocat</p>
+                    <p id="github-profile-id" class="github-profile-id">
+                      @octocat
+                    </p>
                   </div>
                   <div class="component-2-1-right">
                     <p id="profile-creation-date" class="profile-creation-date">
@@ -64,15 +66,15 @@
                 <div id="component-2-3" class="component-2-3">
                   <div class="repos-section">
                     <p class="repos text">Repos</p>
-                    <h1 class="number number-dark">8</h1>
+                    <h1 id="repos" class="number number-dark">8</h1>
                   </div>
                   <div class="followers-section">
                     <p class="followers text">Followers</p>
-                    <h1 class="number number-dark">8144</h1>
+                    <h1 id="followers" class="number number-dark">8144</h1>
                   </div>
                   <div class="following-section">
                     <p class="following text">Following</p>
-                    <h1 class="number number-dark">9</h1>
+                    <h1 id="following" class="number number-dark">9</h1>
                   </div>
                 </div>
                 <div class="component-2-4">
@@ -81,11 +83,13 @@
                       id="location-icon-image"
                       class="location-icon-image"
                     ></div>
-                    <div class="location-name text-2">San Francisco</div>
+                    <div id="location" class="location-name text-2">
+                      San Francisco
+                    </div>
                   </div>
                   <div class="section">
                     <div id="link-icon-image" class="link-icon-image"></div>
-                    <div class="link text-2">https://github.blog</div>
+                    <div id="blog" class="link text-2">https://github.blog</div>
                   </div>
                 </div>
                 <div class="component-2-5">
@@ -94,11 +98,13 @@
                       id="twitter-icon-image"
                       class="twitter-icon-image"
                     ></div>
-                    <div class="twitter-name text-2">Not available</div>
+                    <div id="twitter" class="twitter-name text-2">
+                      Not available
+                    </div>
                   </div>
                   <div class="section">
                     <div id="org-icon-image" class="org-icon-image"></div>
-                    <div class="github-id text-2">@github</div>
+                    <div id="org" class="github-id text-2">@github</div>
                   </div>
                 </div>
               </div>
