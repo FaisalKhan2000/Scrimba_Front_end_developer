@@ -13,17 +13,17 @@ h3 {
 
 h1 {
   color: whitesmoke;
-  font-size: 36px;
+  font-size: 2.25em;
 }
 
 h2 {
   color: #451c7a;
-  font-size: 28px;
+  font-size: 1.75em;
   margin-top: 0;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 p {
@@ -32,7 +32,7 @@ p {
 
 .subheading {
   display: block;
-  font-size: 20px;
+  font-size: 0.56em;
   color: #d0aaff;
 }
 
